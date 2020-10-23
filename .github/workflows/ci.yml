@@ -27,8 +27,8 @@ jobs:
        name: Login to DockerHub
        uses: ./
        with:
-         username: ${{ secrets.DOCKERHUB_USERNAME_TEST }}
-         password: ${{ secrets.DOCKERHUB_PASSWORD_TEST }}
+         username: ${{ secrets.DOCKERHUB_USERNAME }}
+         password: ${{ secrets.DOCKERHUB_PASSWORD }}
          logout: ${{ matrix.logout }}
      -
        name: Clear
